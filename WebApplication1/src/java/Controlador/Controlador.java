@@ -26,7 +26,7 @@ public class Controlador extends HttpServlet {
         String accion = request.getParameter("accion");
         switch (accion) {
             case "Principal":
-                request.getRequestDispatcher("Principal.jsp").forward(request, response);
+                request.getRequestDispatcher("Seccion1.jsp").forward(request, response);
                 break;
             default:
                 throw new AssertionError();

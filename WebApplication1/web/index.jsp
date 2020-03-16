@@ -1,43 +1,38 @@
-<%-- 
-    Document   : index
-    Created on : 13/03/2020, 08:19:57
-    Author     : carlealp
+<%--
+  Created by IntelliJ IDEA.
+  User: erick
+  Date: 3/03/2020
+  Time: 11:09
+  To change this template use File | Settings | File Templates.
 --%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <title>Login</title>
-    </head>
-    <body>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<head>
+    <title>Login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" type="text/css" href="Content/bootstrap.css"/>
+    <link rel="stylesheet"  type="text/css" href="Content/signin.css"/>
 
-        <div class="container mt-4 col-lg-4">
-            <div class="card col-sm-10">
-                <div class="card-body">
-                    <form class="form-sign" action="Validar" method="POST">
-                        <div class="form-group text-center">
-                            <img src="img/candado.png" alt="70" width="170"/>
-                            <h3>Login</h3>
-                            <label><b>Bienvenido al Sistema</b></label>
-                        </div>
-                        <div class="form-group">
-                            <label>Usuario:</label>
-                            <input type="text" name="txtuser" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label>Contraseña:</label>
-                            <input type="password" name="txtpass" class="form-control">
-                        </div>
-                        <input type="submit" name="accion" value="Ingresar" class="btn btn-primary btn-lg btn-block">
-                    </form>
-                </div>
-            </div>
+</head>
+<body>
+
+
+<div class="container" >
+    <div class="row justify-content-center">
+        <div class="col-8 col-sm-8 col-md-6 col-lg-6 col-xl-4 shadow-lg p-3 mb-5 bg-white rounded " style="width: 25%;">
+            <form class="form-signin align-self-center" action="Validar" method="Post">
+                <img class="mb-4 img-fluid" src="img/logocardenas.png" width="" height="">
+                <h1 class="h3 mb-3 font-weight-normal">Iniciar Sesión</h1>
+                <label for="inputEmail" class="sr-only">Usuario</label>
+                <input type="text" id="inputEmail" class="form-control border border-secondary" placeholder="Email address" name="txtuser" autofocus>
+                <label for="inputPassword" class="sr-only">Contraseña</label>
+                <input type="password" id="inputPassword" name="txtpass" class="form-control border border-secondary" placeholder="Password" required>
+                <button class="btn  btn-block" style="background-color: #162A47; color: white;" type="submit" value="Ingresar" name="accion">Iniciar Sesión</button></a>
+            </form>
         </div>
-    </body>
-</html>
+    </div>
+</div>
+</body>
+
+
