@@ -23,8 +23,8 @@ public class EmpleadoDAO {
 
     public Empleado Validar(String user, String dni) {
         Empleado em = new Empleado();
-        String sql = "Select * From Customers Where CustomerID = ? AND City = ?";
-
+        String sql = "Exec sp_login ?, ?";
+        
         try {
             con = cn.Conexion();
             ps = con.prepareStatement(sql);
@@ -32,8 +32,8 @@ public class EmpleadoDAO {
             ps.setString(2, dni);
             rs = ps.executeQuery();
             while (rs.next()) {
-                em.setId(rs.getNString("CustomerID"));
-                em.setDni(rs.getString("City"));
+                em.setId(rs.getString("correo"));
+                em.setDni(rs.getString("contrasena"));
             }
         } catch (Exception e) {
 
