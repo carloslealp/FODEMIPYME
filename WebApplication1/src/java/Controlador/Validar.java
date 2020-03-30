@@ -42,17 +42,19 @@ public class Validar extends HttpServlet {
             throws ServletException, IOException {
 
         String accion = request.getParameter("accion");
-        
+
         if (accion.equalsIgnoreCase("Ingresar")) {
             String user = request.getParameter("txtuser");
             String pass = request.getParameter("txtpass");
             em = edao.Validar(user, pass);
             if (em.getId() != null) {
-                request.getRequestDispatcher("Controlador?accion=Principal").forward(request, response);
+                request.getRequestDispatcher("Controlador?menu=Principal").forward(request, response);
             } else {
                 request.getRequestDispatcher("index.jsp").forward(request, response);;
             }
-        } else {
+        }else if(accion.equalsIgnoreCase("seccionP2")){
+            request.getRequestDispatcher("Controlador?menu=seccionP2").forward(request, response);
+        }else {
             request.getRequestDispatcher("index.jsp").forward(request, response);;
         }
     }
