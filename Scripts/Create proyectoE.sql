@@ -1,3 +1,4 @@
+
 Use master
 Go
 
@@ -61,7 +62,7 @@ Create Table Empresa(
 	,representante varchar(20) NOT NULL
 	,direccion varchar(100) NOT NULL
 	,idDepartamento integer NOT NULL
-	--,idMunicipio integer NOT NULL
+	,idMunicipio integer NOT NULL
 	,aldea varchar(50) NOT NULL
 	,telefono1 varchar(10)
 	,telefono2 varchar(10)
@@ -69,10 +70,10 @@ Create Table Empresa(
 	,paginaWeb varchar(20)
 	,fechaInicio date
 	,descripcionProducto varchar(100)
-	--,idSector integer NOT NULL
+	,idSector integer NOT NULL
 
 	Constraint pk_nit Primary Key(nit)
 	,Constraint fk_idDepartamentoE Foreign Key (idDepartamento) References Departamento(idDepartamento)
-	--,Constraint fk_idMunicipioE Foreign Key (idMunicipio) References Municipio(idMunicipio)
-	--,Constraint fk_idSector Foreign Key (idSector) References sectorEmpresa(idSector)
+	,Constraint fk_idMunicipioE Foreign Key (idMunicipio) References Municipio(idMunicipio)
+	,Constraint fk_idSector Foreign Key (idSector) References sectorEmpresa(idSector)
 );

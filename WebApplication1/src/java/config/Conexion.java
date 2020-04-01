@@ -15,7 +15,7 @@ import java.sql.DriverManager;
 public class Conexion {
 
     Connection con;
-    String url = "jdbc:sqlserver://CARLEALPDELL\\MSSQLSERVER:1433;databaseName=Northwind";
+    String url = "jdbc:sqlserver://CARLEALPDELL\\MSSQLSERVER:1433;databaseName=proyectoE";
     String user = "sa";
     String pass = "P@ssw0rd";
 
