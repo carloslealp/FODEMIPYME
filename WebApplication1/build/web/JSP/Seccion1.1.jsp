@@ -55,7 +55,7 @@
         <div class="Container" style="margin-top: 3%;">
             <h3 class="text-uppercase text-center" style="margin-left: 5%; margin-right: 5%; margin-bottom: 3%;">Sección 1:
                 Información General</h3>
-            <form action="Validar" method="POST">
+            <form action="" style="">
                 <h5 style="margin-top:2%; margin-bottom:2%; color: #162A47">Datos de los colaboradores</h5>
                 <div class="form-row">
                     <div class="form-group col-md-6">
@@ -285,7 +285,7 @@
                 </div>
 
                 <div class="row justify-content-center">
-                    <button class="btn " style="background-color: #162A47; color: white; align-self: center;" type="submit" value="seccionP2" name="accion">Siguiente</button></a>
+                    <a href="Seccion1.1.1.jsp"><button type="button" class="btn " style="background-color: #162A47; color: white; align-self: center;">Continuar</button></a>
                 </div>
 
             </form>

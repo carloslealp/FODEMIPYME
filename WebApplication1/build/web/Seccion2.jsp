@@ -32,7 +32,7 @@
     <div class="collapse navbar-collapse" id="navbarColor03">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link"  href="Seccion1.jsp">Seccion 1<span class="sr-only">(current)</span></a>
+                <a class="nav-link"  style="color: white;"  href="Seccion1.jsp">Seccion 1<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" style="color: white;" href="Seccion1.1.jsp" >Seccion 1.1</a>
@@ -450,7 +450,7 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <a href="Seccion3.jsp">  <button type="button" class="btn " style="background-color: #162A47; color: white; align-self: center;">Siguiente</button></a>
+            <a href="Seccion3.jsp">  <button type="button" class="btn " style="background-color: #162A47; color: white; align-self: center;">Continuar con Sección III</button></a>
         </div>
     </form>
 </div>

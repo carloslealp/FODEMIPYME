@@ -1,4 +1,3 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%--
   Created by IntelliJ IDEA.
   User: erick
@@ -86,109 +85,24 @@
                         <input type="text" class="form-control" id="txtDireccionEmpresa" name="txtDireccionEmpresa">
                     </div>
                 </div>
-                <div class="form-row">
+                <!--<div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="CmbDepartamento">Departamento</label>
                         <select class="form-control" id="cmbDepartamento" name="CmbDepartamento">
-                            <option selected>Seleccione Departamento</option>
-                            <c:forEach var ="dep" items="${Departamentos}">
-                                <option>${dep.getNombre()}</option>
-                            </c:forEach>
+                            <option>Seleccione Departamento</option>
+                            <option>Guatemala</option>
+                            <option>Huhuetenango</option>
+                            <option>Izabal</option>
+                            <option>Zacapa</option>
+                            <option>San Marcos</option>
                         </select>
                     </div>
                     <div class="form-group col-md-6">
                         <label for="CmbMunicipio">Municipio</label>
                         <select class="form-control" id="CmbMunicipio" name="CmbMunicipio">
-                            <option selected>Seleccione Municipio</option>
-                            <option disabled style="font-weight: bolder; font-size: 15px">Alta Verapaz</option>
-                            <c:forEach var ="mun" items="${Municipio1}">
-                                <option>${mun.getNombre()}</option>
-                            </c:forEach>
-                            <option disabled style="font-weight: bolder; font-size: 15px">Baja Verapaz</option>
-                            <c:forEach var ="mun" items="${Municipio2}">
-                                <option>${mun.getNombre()}</option>
-                            </c:forEach>
-                            <option disabled style="font-weight: bolder; font-size: 15px">Chimaltenango</option>
-                            <c:forEach var ="mun" items="${Municipio3}">
-                                <option>${mun.getNombre()}</option>
-                            </c:forEach>
-                            <option disabled style="font-weight: bolder; font-size: 15px">Chiquimula</option>
-                            <c:forEach var ="mun" items="${Municipio4}">
-                                <option>${mun.getNombre()}</option>
-                            </c:forEach>
-                            <option disabled style="font-weight: bolder; font-size: 15px">El Progreso</option>
-                            <c:forEach var ="mun" items="${Municipio5}">
-                                <option>${mun.getNombre()}</option>
-                            </c:forEach>
-                            <option disabled style="font-weight: bolder; font-size: 15px">Escuintla</option>
-                            <c:forEach var ="mun" items="${Municipio6}">
-                                <option>${mun.getNombre()}</option>
-                            </c:forEach>
-                            <option disabled style="font-weight: bolder; font-size: 15px">Guatemala</option>
-                            <c:forEach var ="mun" items="${Municipio7}">
-                                <option>${mun.getNombre()}</option>
-                            </c:forEach>
-                            <option disabled style="font-weight: bolder; font-size: 15px">Huehuetenango</option>
-                            <c:forEach var ="mun" items="${Municipio8}">
-                                <option>${mun.getNombre()}</option>
-                            </c:forEach>
-                            <option disabled style="font-weight: bolder; font-size: 15px">Izabal</option>
-                            <c:forEach var ="mun" items="${Municipio9}">
-                                <option>${mun.getNombre()}</option>
-                            </c:forEach>
-                            <option disabled style="font-weight: bolder; font-size: 15px">Jalapa</option>
-                            <c:forEach var ="mun" items="${Municipio10}">
-                                <option>${mun.getNombre()}</option>
-                            </c:forEach>
-                            <option disabled style="font-weight: bolder; font-size: 15px">Jutiapa</option>
-                            <c:forEach var ="mun" items="${Municipio11}">
-                                <option>${mun.getNombre()}</option>
-                            </c:forEach>
-                            <option disabled style="font-weight: bolder; font-size: 15px">Petén</option>
-                            <c:forEach var ="mun" items="${Municipio12}">
-                                <option>${mun.getNombre()}</option>
-                            </c:forEach>
-                            <option disabled style="font-weight: bolder; font-size: 15px">Quetzaltenango</option>
-                            <c:forEach var ="mun" items="${Municipio13}">
-                                <option>${mun.getNombre()}</option>
-                            </c:forEach>
-                            <option disabled style="font-weight: bolder; font-size: 15px">Quiché</option>
-                            <c:forEach var ="mun" items="${Municipio14}">
-                                <option>${mun.getNombre()}</option>
-                            </c:forEach>
-                            <option disabled style="font-weight: bolder; font-size: 15px">Retalhuleu</option>
-                            <c:forEach var ="mun" items="${Municipio15}">
-                                <option>${mun.getNombre()}</option>
-                            </c:forEach>
-                            <option disabled style="font-weight: bolder; font-size: 15px">Sacatepéquez</option>
-                            <c:forEach var ="mun" items="${Municipio16}">
-                                <option>${mun.getNombre()}</option>
-                            </c:forEach>
-                            <option disabled style="font-weight: bolder; font-size: 15px">San Marcos</option>
-                            <c:forEach var ="mun" items="${Municipio17}">
-                                <option>${mun.getNombre()}</option>
-                            </c:forEach>
-                            <option disabled style="font-weight: bolder; font-size: 15px">Santa Rosa</option>
-                            <c:forEach var ="mun" items="${Municipio18}">
-                                <option>${mun.getNombre()}</option>
-                            </c:forEach>
-                            <option disabled style="font-weight: bolder; font-size: 15px">Sololá</option>
-                            <c:forEach var ="mun" items="${Municipio19}">
-                                <option>${mun.getNombre()}</option>
-                            </c:forEach>
-                            <option disabled style="font-weight: bolder; font-size: 15px">Suchitepéquez</option>
-                            <c:forEach var ="mun" items="${Municipio20}">
-                                <option>${mun.getNombre()}</option>
-                            </c:forEach>
-                            <option disabled style="font-weight: bolder; font-size: 15px">Totonicapán</option>
-                            <c:forEach var ="mun" items="${Municipio21}">
-                                <option>${mun.getNombre()}</option>
-                            </c:forEach>
-                            <option disabled style="font-weight: bolder; font-size: 15px">Zacapa</option>
-                            <c:forEach var ="mun" items="${Municipio22}">
-                                <option>${mun.getNombre()}</option>
-                            </c:forEach>
-
+                            <option>Seleccione Municipio</option>
+                            <option>No se</option>
+                            <option>No se</option>
                         </select>
                     </div>
                 </div>
@@ -203,7 +117,7 @@
                     </div>
                     <div class="form-group col-md-4">
                         <label for="txtTelefono2">Teléfono 2</label>
-                        <input type="text"  class="form-control" id="txtTelefono2" name="txtTelefono2">
+                        <input type="text"  class="form-control" id="txtTelefono2" name="txtTelefono1">
                     </div>
                 </div>
                 <br>
@@ -232,10 +146,10 @@
                     <div class="form-group col-md-6">
                         <label for="CmbSector">Sector al que pertenece la empresa</label>
                         <select class="form-control" id="CmbSector" name="CmbSector">
-                            <option selected>Seleccione un sector empresarial</option>
-                            <c:forEach var ="sec" items="${Sectores}">
-                                <option>${sec.getNombre()}</option>
-                            </c:forEach>
+                            <option>Seleccione Sector</option>
+                            <option>Seleccione un sector</option>
+                            <option>Servicios</option>
+                            <option>Comercio</option>
                         </select>
                     </div>
                 </div>
@@ -244,7 +158,7 @@
                         <label for="txtDescripcionProductos">Describa y/o enumere sus productos o servicios</label>
                         <textarea class="form-control" id="txtDescripcionProductos" name="txtDescripcionProductos" rows="8"></textarea>
                     </div>
-                </div>
+                </div>-->
 
                 <div class="row justify-content-center">
                     <button class="btn " style="background-color: #162A47; color: white; align-self: center;" type="submit" value="seccionP2" name="accion">Siguiente</button></a>

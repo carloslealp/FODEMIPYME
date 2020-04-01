@@ -31,7 +31,7 @@
             <div class="collapse navbar-collapse" id="navbarColor03">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link"  href="Seccion1.jsp">Seccion 1<span class="sr-only">(current)</span></a>
+                        <a class="nav-link"  style="color: white;" href="Seccion1.jsp">Seccion 1<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" style="color: white;" href="Seccion1.1.jsp" >Seccion 1.1</a>
@@ -55,7 +55,7 @@
         <div class="Container" style="margin-top: 3%;">
             <h3 class="text-uppercase text-center" style="margin-left: 5%; margin-right: 5%; margin-bottom: 3%;">Sección 1:
                 Información General</h3>
-            <form action="" style="">
+            <form action="Validar" method="POST">
                 <h5 style="margin-top:2%; margin-bottom:2%; color: #162A47">Datos de los colaboradores</h5>
                 <div class="form-row">
                     <div class="form-group col-md-6">
@@ -285,7 +285,7 @@
                 </div>
 
                 <div class="row justify-content-center">
-                    <a href="Seccion1.1.1.jsp"><button type="button" class="btn " style="background-color: #162A47; color: white; align-self: center;">Siguiente</button></a>
+                    <button class="btn " style="background-color: #162A47; color: white; align-self: center;" type="submit" value="seccionP2" name="accion">Siguiente</button></a>
                 </div>
 
             </form>

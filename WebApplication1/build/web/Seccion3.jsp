@@ -31,7 +31,7 @@
     <div class="collapse navbar-collapse" id="navbarColor03">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link"  href="Seccion1.jsp">Seccion 1<span class="sr-only">(current)</span></a>
+                <a class="nav-link" style="color: white;"  href="Seccion1.jsp">Seccion 1<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" style="color: white;" href="Seccion1.1.jsp" >Seccion 1.1</a>
@@ -212,4 +212,5 @@
 </div>
 </body>
 </html>
+
 
