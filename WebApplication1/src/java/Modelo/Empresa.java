@@ -25,6 +25,7 @@ public class Empresa {
     String paginaWeb;
     String fechaInicio;
     String descripcionProducto;
+    String sector;
     
     public Empresa(){
         
@@ -32,7 +33,7 @@ public class Empresa {
     
     public Empresa(String nit, String nombre, String contacto, String representante, String direccion,
                     String departamento, String municipio, String aldea, String telefono1, String telefono2,
-                    String correo, String paginaWeb, String fechaInicio, String descripcionProducto){
+                    String correo, String paginaWeb, String fechaInicio, String descripcionProducto, String sector){
         this.nit = nit;
         this.nombre = nombre;
         this.contacto = contacto;
@@ -47,6 +48,7 @@ public class Empresa {
         this.paginaWeb = paginaWeb;
         this.fechaInicio = fechaInicio;
         this.descripcionProducto = descripcionProducto;
+        this.sector = sector;
     }
 
     public String getNit() {
@@ -160,7 +162,13 @@ public class Empresa {
     public void setDescripcionProducto(String descripcionProducto) {
         this.descripcionProducto = descripcionProducto;
     }
-    
-    
+
+    public String getSector() {
+        return sector;
+    }
+
+    public void setSector(String sector) {
+        this.sector = sector;
+    }
     
 }

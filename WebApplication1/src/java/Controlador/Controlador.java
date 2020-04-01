@@ -33,7 +33,9 @@ public class Controlador extends HttpServlet {
 
         String menu = request.getParameter("menu");
         String accion = request.getParameter("accion");
-
+        if (menu.equals("index")) {
+            request.getRequestDispatcher("dashboard.jsp").forward(request, response);
+        }
         if (menu.equals("Principal")) {
             switch (accion) {
                 case "Listar":
@@ -98,6 +100,8 @@ public class Controlador extends HttpServlet {
             String contacto = request.getParameter("txtNombreContactoDirecto");
             String representante = request.getParameter("txtNombreRepresentanteLegal");
             String direccion = request.getParameter("txtDireccionEmpresa");
+            String departamento = request.getParameter("CmbDepartamento");
+            String municipio = request.getParameter("CmbMunicipio");
             String aldea = request.getParameter("txtAldea");
             String telefono1 = request.getParameter("txtTelefono1");
             String telefono2 = request.getParameter("txtTelefono1");
@@ -105,12 +109,15 @@ public class Controlador extends HttpServlet {
             String paginaWeb = request.getParameter("txtPaginaWeb");
             String fechaInicio = request.getParameter("txtFechaOperaciones");
             String descripcionProducto = request.getParameter("txtDescripcionProductos");
+            String sector = request.getParameter("CmbSector");
 
             em.setNit(nit);
             em.setNombre(nombre);
             em.setContacto(contacto);
             em.setRepresentante(representante);
             em.setDireccion(direccion);
+            em.setDepartamento(departamento);
+            em.setMunicipio(municipio);
             em.setAldea(aldea);
             em.setTelefono1(telefono1);
             em.setTelefono2(telefono2);
@@ -118,6 +125,7 @@ public class Controlador extends HttpServlet {
             em.setPaginaWeb(paginaWeb);
             em.setFechaInicio(fechaInicio);
             em.setDescripcionProducto(descripcionProducto);
+            em.setSector(sector);
 
             emdao.Agregar(em);
 

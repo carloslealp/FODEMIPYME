@@ -552,7 +552,7 @@ public class EmpleadoDAO {
 
     //Operaciones
     public int Agregar(Empresa em) {
-        String sql = "Exec sp_insertSeccion1 ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?";
+        String sql = "Exec sp_insertSeccion1 ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?";
 
         try {
             con = cn.Conexion();
@@ -562,13 +562,16 @@ public class EmpleadoDAO {
             ps.setString(3, em.getContacto());
             ps.setString(4, em.getRepresentante());
             ps.setString(5, em.getDireccion());
-            ps.setString(6, em.getAldea());
-            ps.setString(7, em.getTelefono1());
-            ps.setString(8, em.getTelefono2());
-            ps.setString(9, em.getCorreo());
-            ps.setString(10, em.getPaginaWeb());
-            ps.setString(11, em.getFechaInicio());
-            ps.setString(12, em.getDescripcionProducto());
+            ps.setString(6, em.getDepartamento());
+            ps.setString(7, em.getMunicipio());
+            ps.setString(8, em.getAldea());
+            ps.setString(9, em.getTelefono1());
+            ps.setString(10, em.getTelefono2());
+            ps.setString(11, em.getCorreo());
+            ps.setString(12, em.getPaginaWeb());
+            ps.setString(13, em.getFechaInicio());
+            ps.setString(14, em.getDescripcionProducto());
+            ps.setString(15, em.getSector());
             ps.executeUpdate();
         } catch (Exception e) {
 
